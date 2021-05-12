@@ -160,7 +160,7 @@
   }
   .styled-table thead tr {
     background-color: var(--bg-primary);
-    color: var(--text-primary);
+    color: var(--text-secondary);
     transition: var(--transition-speed);
   
   }
@@ -170,22 +170,18 @@
   }
 
   .styled-table tbody tr {
-    color: var(--text-secondary);
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
     border-bottom: 2px solid var(--bg-secondary);
-    transition: var(--transition-speed), font-weight calc(var(--transition-speed) / 2);
+    transition: var(--transition-speed);
 }
 
   .styled-table tbody tr:last-of-type {
     border-bottom: 5px solid #5E81AC
   }
 
-  .styled-table tbody {
-    background-color: var(--bg-primary);
-    transition: var(--transition-speed);
-  }
-
-  tr:hover {
-    font-weight: bold;
+  tbody tr:hover {
+    color: var(--text-secondary);
     background-color: var(--bg-secondary);
   }
 
