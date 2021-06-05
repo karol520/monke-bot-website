@@ -6,6 +6,9 @@
     --bg-primary: #2E3440;
     --bg-secondary: #3B4252;
     --transition-speed: 600ms;
+    scrollbar-width: thin;
+    scrollbar-color: #5E81AC rgba(0, 0, 0, 0);
+    transition: var(--transition-speed);
   }
 
   html {
