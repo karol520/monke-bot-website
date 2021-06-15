@@ -63,9 +63,16 @@
     background-color: var(--bg-primary);
     transition: width 600ms ease;
     overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: none; /* firefox */
+    -ms-overflow-style: none; /* IE 10+ */
     transition: var(--transition-speed);
   }
   
+  .navbar::-webkit-scrollbar {
+    display: none;
+  }
+
   .navbar-nav {
     list-style: none;
     padding: 0;
